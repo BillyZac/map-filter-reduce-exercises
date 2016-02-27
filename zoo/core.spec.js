@@ -3,7 +3,7 @@ var assert = require('assert'),
 
 describe('Zoo', function() {
   describe('#entryCalculator()', function () {
-    xit('returns 0 if no entrants selected', function () {
+    it('returns 0 if no entrants selected', function () {
       var result1 = zoo.entryCalculator();
       assert.equal(0, result1);
 

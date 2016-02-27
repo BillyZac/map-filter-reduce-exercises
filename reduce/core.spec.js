@@ -31,7 +31,7 @@ describe('Reduce', function() {
   });
 
   describe('#luckyNumbers()', function () {
-    xit('return a fortune like sentence with lucky numbers', function () {
+    it('return a fortune like sentence with lucky numbers', function () {
       var array  = [30, 48, 11, 5, 32];
       var result = 'Your lucky numbers are: 30, 48, 11, 5, and 32';
       assert.equal(result, core.luckyNumbers(array));

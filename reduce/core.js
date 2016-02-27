@@ -21,7 +21,11 @@ function objectify (array) {
 };
 
 function luckyNumbers (array) {
-  // your code here
+  return array.reduce(function(accumulator, currentNumber, index, array) {
+    if (index === array.length - 1)
+      return accumulator + 'and ' + currentNumber
+    return accumulator + currentNumber + ', '
+  }, 'Your lucky numbers are: ')
 };
 
 module.exports = {

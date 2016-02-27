@@ -1,5 +1,12 @@
+var zooData = require('./data')
+
 function entryCalculator (entrants) {
-  // your code here
+  console.log('==========================');
+  console.log(entrants);
+  console.log(!entrants);
+  console.log('undefined check:', entrants == undefined);
+  if (!entrants)
+    return 0
 };
 
 function schedule (dayName) {
@@ -7,7 +14,14 @@ function schedule (dayName) {
 };
 
 function animalCount (species) {
-  // your code here
+  var animalsArray = zooData.animals
+  return animalsArray.reduce(function(accumulator, current) {
+    if (!accumulator[current.name]) {
+      accumulator[current.name] = 0
+    }
+    accumulator[current.name] = current.residents.length
+    return accumulator
+  }, {})
 };
 
 function animalMap (options) {

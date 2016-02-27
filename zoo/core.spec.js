@@ -3,7 +3,7 @@ var assert = require('assert'),
 
 describe('Zoo', function() {
   describe('#entryCalculator()', function () {
-    it('returns 0 if no entrants selected', function () {
+    xit('returns 0 if no entrants selected', function () {
       var result1 = zoo.entryCalculator();
       assert.equal(0, result1);
 
@@ -52,7 +52,7 @@ describe('Zoo', function() {
   });
 
   describe('#animalCount()', function () {
-    xit('with no parameters, returns animals and their counts', function () {
+    it('with no parameters, returns animals and their counts', function () {
       var result   = zoo.animalCount();
       var expected = {
                       'lions': 4,
